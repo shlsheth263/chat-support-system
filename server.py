@@ -3,8 +3,13 @@ import threading
 from datetime import datetime
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((socket.gethostname(),1234))
-s.listen(5) #queue
+ 
+ # Make sure client.py has same port as this
+_port = 1113
+
+
+s.bind((socket.gethostname(),_port))
+s.listen(5) 
 def t(clientsocket) :
     print("Connection from "+str(address)+ " has been established!")
     clientsocket.send(bytes("Welcome to the server", "utf-8"))
