@@ -21,7 +21,7 @@ d) You can have multiple client.py running at same time in different terminals.
 
 e) if you get the error "connection refused" or "port already in use" . Change the port in both client.py and server.py and redo steps 1 and 2.
 
-f)leading and trailing spaces , "?" in the end, upperCase or lowerCase
+f)leading and trailing spaces , "?" in the end, upperCase or lowerCase have been taken care of
 
 
 g)Any questions other than the ones mentioned below will hand over control for that question to server.py user and ask that user for answer to that question.
